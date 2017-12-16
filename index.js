@@ -21,6 +21,7 @@ util.inherits(BunyanFormatWritable, Writable);
  *  - outputMode: short|long|simple|json|bunyan
  *  - color (true): toggles colors in output
  *  - colorFromLevel: allows overriding log level colors
+ *  - timeFormat (function): allows a custom time format, 1st argument is the time provided by bunyan
  * @param out {Stream} (process.stdout) writable stream to write 
  * @return {WritableStream} that you can pipe bunyan output into
  */
